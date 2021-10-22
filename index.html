@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <title>Tugas Praktikum 3.1</title>
+    <!-- Style Css Inline -->
+    <style>
+        #all {
+            width: 42%;
+            padding: 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <fieldset>
+            <!-- Action attribute -->
+            <form method="POST" action="http://blackgoosebistro.com/pizza.php">
+                <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+                Our 12" wood-fired pizzas are available for delivery.Build your costum pizza and we'll deliver it within
+                an hour
+                <p></p>
+                <br>
+                <!-- Text input -->
+                <span>Your Information</span>
+                <p></p>
+                <div>
+                    <label>Name :
+                        <input type="text" name="customername"></label><br>
+                    <label>Address :
+                        <input type="text" name="address"></label><br>
+                    <label>Telephone Number :
+                        <input type="text" name="telephone"></label><br>
+                    <label>Email :
+                        <input type="email" name="email"></label><br>
+                    <label>Delivery Instructions :<br>
+                        <textarea rows="4" cols="40" maxlength="400" name="instructions"></textarea></label>
+                </div>
+                <!-- Radio Button -->
+                <div>
+                    <p><strong>Design Your Dream Pizza :</strong><br>
+                        Pizza specs</p>
+                    <span>crust (Choose one):</span>
+                    <br>
+                    <input type="radio" value="Classic white" name="crust">Classic white<br>
+                    <input type="radio" value="Multigrain" name="crust">Multigrain<br>
+                    <input type="radio" value="Cheese-stufed crust" name="crust">Cheese-stuffed crust<br>
+                    <input type="radio" value="Glute-free" name="crust">Gluten-free<br>
+                </div>
+                <!-- Checkbox -->
+                <div>
+                    <span>Toppings (Choose as many as you want):</span>
+                    <br>
+                    <input type="checkbox" value="red sauce" id="red_sauce" name="toppings[]">
+                    <label for="red_sauce">Red sauce</label>
+                    <br>
+                    <input type="checkbox" value="White Sauce" id="white_sauce" name="toppings[]">
+                    <label for="white_sauce">White Sauce</label>
+                    <br>
+                    <input type="checkbox" value="mozzarella cheese" id="mozzarella_cheese" name="toppings[]">
+                    <label for="mozzarella_cheese">Mozzarella cheese</label>
+                    <br>
+                    <input type="checkbox" value="pepperoni" id="pepperoni" name="toppings[]">
+                    <label for="pepperoni">Pepperoni
+                    </label>
+                    <br>
+                    <input type="checkbox" value="mushrooms" id="mushrooms" name="toppings[]">
+                    <label for="mushrooms">Mushrooms</label>
+                    <br>
+                    <input type="checkbox" value="peppers" id="peppers" name="toppings[]">
+                    <label for="peppers">Peppers</label>
+                    <br>
+                    <input type="checkbox" value="Anchovies" id="Anchovies" name="toppings[]">
+                    <label for="Anchovies">Anchovies</label>
+                    <br>
+                </div>
+                <p></p>
+                <!-- Input number -->
+                <div>
+                    <span>Number</span><br>
+                    <span>How many pizzas:</span>
+                    <label></label><input type="number" name="pizzas" min="1" max="10">
+                </div>
+                <p></p>
+                <!-- Button -->
+                <div>
+                    <input type="submit" value="Bring me a pizza!">
+                    <input type="reset" value="reset">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
